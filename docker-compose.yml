@@ -2,6 +2,7 @@ version: '3'
 services:
   app1:
     build: .
+    image: ashanediri/nginx-web:app1
     environment:
       - APP_NAME=App1
     ports:
@@ -9,6 +10,7 @@ services:
 
   app2:
     build: .
+    image: ashanediri/nginx-web:app2
     environment:
       - APP_NAME=App2
     ports:
@@ -16,6 +18,7 @@ services:
 
   app3:
     build: .
+    image: ashanediri/nginx-web:app3
     environment:
       - APP_NAME=App3
     ports:
